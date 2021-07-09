@@ -1,0 +1,21 @@
+
+body{
+    background-color: darkseagreen;
+}
+
+h1{
+    color: firebrick;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+p{
+    color: firebrick;
+    font-size: 2em;
+}
+
+p span{
+    font-size: 2em;
+}

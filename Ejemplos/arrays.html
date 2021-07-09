@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usando Arrays</title>
+<link rel="stylesheet" href="css/micss.css">
+<script src="arrays.js"></script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div class="header">
+    <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas
+     </p>
+  </div>
+  <div class="contenido">
+    <div class="principal">
+      <h1>Manejando Arrays</h1>
+      <script>
+
+        document.write("<p> Hola <strong>"+nombres+" "+apellidos+"</strong></br>");
+        document.write("Tienes <strong>"+añoActual+"</strong> de edad </p>");
+
+
+	  
+        document.write("<p><strong>");
+          document.write("Posicion 1: "+articulos [0]+"</br>");
+          document.write("Posicion 2: "+articulos [1]+"</br>");
+          document.write("Posicion 3: "+articulos [2]+"</br>");
+          document.write("Posicion 4: "+articulos [3]+"</br>");
+          document.write("Posicion 5: "+articulos [4]+"</br>");
+          document.write("Posicion 6: "+articulos [5]+"</br>");
+        document.write("</p></strong>");
+
+
+        document.write("<p>La cantidad de articulos que tiene este array es: <strong>"+articulos.length+"</strong></p>");
+
+        document.write("<p>");
+          document.write("En la ultima posicion del array se encuentra el articulo: ");
+          document.write("<strong>");
+            document.write(articulos [articulos.length-1]);
+          document.write("</strong>");
+        document.write("</p>");
+
+
+        articulos.unshift("chaquetas");//Unshift sirve para añadir un articulo al inicio del array
+        document.write("<p>");
+          document.write("El articulo que nos falto por añadir al inicio es: <strong>");
+            document.write(articulos [0]);
+          document.write("</strong></p>");
+		
+
+          document.write("<p>En este array hay <strong>"+articulos.length+"</strong> de articulos </br>");
+            document.write("Estos son los articulos: </br>");
+            document.write("1) "+articulos [0]+"</br>");
+            document.write("2) "+articulos [1]+"</br>");
+            document.write("3) "+articulos [2]+"</br>");
+            document.write("4) "+articulos [3]+"</br>");
+            document.write("5) "+articulos [4]+"</br>");
+            document.write("6) "+articulos [5]+"</br>");
+
+            document.write("Para mirar solo el ultimo articulo se usa length -1: </br>");
+            document.write("Este es el ultimo articulo: "+articulos[articulos.length -1] +"</br>");
+            document.write("Agregamos un articulo al inicio del array con unshift </br>");
+            articulos.unshift("Pantaloneta en licra </br>");
+            document.write("Observamos ese articulo en la posicion 1: </bt>");
+            document.write("Nueva cantidad de articulos: <strong>"+articulos.length
+              +"</strong> Con el dril agregado al inicio</br>");
+            document.write("Nuevo articulo en la posicion 1: "+articulos [0]);
+
+
+            //Agregamos un nuevo articulo con push
+            document.write("<p>Agregamos un nuevo articulo al array </br>");
+            articulos.push("Conjunto intimo femenino");
+            document.write("El articulo agregado es <strong>")
+            document.write(articulos[articulos.length-1]+"</strong></br>");
+            document.write("En este array hay ahora "+articulos.length+"</p>");
+
+            //Tambien se puede introducir un articulo al array con prompt
+
+            document.write("<p>Se agrega un articulo temporal al final del codigo usando push con prompt</br>");
+              articulos.push(prompt("Digite el articulo temporal a agregar"));
+              document.write("El articulo agregado es: <strong>"+articulos[articulos.length-1]+"</strong></br>");
+
+              document.write("<p>Pa nueva cantidad de articulos en el array es de: <strong>")
+                document.write(articulos.length+"</strong></br>");
+
+
+                //Borramos el primer articulo con el metodo shift
+
+                alert("Borraremos el priemr elemento");
+                articulos.shift();
+                document.write("Ahora el primer articulo es: <strong>"+articulos[0]+"</strong> </br>");
+
+                alert("Ahora se borrara el ultimo articulo del array");
+                articulos.pop();
+                document.write("Ahora se elimino el ultimo articulo del array y quedo el siguiente: <strong>");
+                document.write(articulos[articulos.length-1]+"</strong></p>");
+		
+		
+		
+	  </script>
+     </div>
+  </div>
+  
+</div>
+</body>
+</html>

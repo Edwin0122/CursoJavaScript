@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usando Arrays</title>
+<link rel="stylesheet" href="css/micss.css">
+<script>
+  //Primera forma de declarar un array
+  var articulos=["zapatillas", "camisetas", "pantalon", "medias"];
+	
+  //Segunda forma de declarar un array
+  //var articulos=new Array("zapatillas", "camisetas", "pantalon", "medias");
+
+  //Forma de declarar un array vacio
+  //var articulos=[];
+</script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div class="header">
+    <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas
+     </p>
+  </div>
+  <div class="contenido">
+    <div class="principal">
+      <h1>Manejando Arrays</h1>
+      <script>
+	  
+        document.write("<p> El primer articulo es <strong>");
+        document.write(articulos [0]+ "</strong></p>");
+
+        
+		
+          //Para ver cuantos articulos tiene el array se usa length
+          
+          document.write("<p>");
+          document.write("Este array tiene <strong>"+articulos.length+"</strong> articulos");
+          document.write("</p>")
+
+          //Si no se sabe cuantos articulos tiene el array y se desea acceder al ultimo articulo
+          document.write("<p>");
+          document.write("El ultimo articulo en el array es: <strong>"+articulos [articulos.length-1]+"</strong>");
+          document.write("</p>");
+
+
+          //Agregamos un nuevo elemento al inicio del array con unshift()
+          articulos.unshift("chaquetas");
+          document.write("<p>");
+            document.write("Le articulo que nos falto por mostrar al inicio es: ");
+            document.write("<strong>");
+              document.write(articulos[0]);
+            document.write("</strong>");
+          document.write("</p>");
+
+          document.write("<p>");
+          document.write(articulos[0]+"</br>");
+          document.write(articulos[1]+"</br>");
+          document.write(articulos[2]+"</br>");
+          document.write(articulos[3]+"</br>");
+          document.write(articulos[4]+"<br></br>");
+          
+          document.write("Se agrega un articulo al final con la variable push");
+          articulos.push("Botas");
+          document.write("El ultimo articulo es <strong>");
+            document.write(articulos[articulos.length-1]+"</strong><br></br>");
+
+          document.write("Observamos todos los articulos almacenados en la variable</br>");
+          document.write(articulos[0]+"</br>");
+          document.write(articulos[1]+"</br>");
+          document.write(articulos[2]+"</br>");
+          document.write(articulos[3]+"</br>");
+          document.write(articulos[4]+"</br>");
+          document.write(articulos[5]+"<br></br>");
+
+          document.write("Eliminamos el primer articulo con el metodo shift </br>");
+          articulos.shift();
+          document.write("Observamos todos los articulos almacenados en la variable</br>");
+          document.write(articulos[0]+"</br>");
+          document.write(articulos[1]+"</br>");
+          document.write(articulos[2]+"</br>");
+          document.write(articulos[3]+"</br>");
+          document.write(articulos[4]+"<br></br>");
+
+          document.write("Ahora borramos el ultmo articulo del array com el metodo pop");
+          articulos.pop();
+          document.write("Observamos todos los articulos almacenados en la variable</br>");
+          document.write(articulos[0]+"</br>");
+          document.write(articulos[1]+"</br>");
+          document.write(articulos[2]+"</br>");
+          document.write(articulos[3]+"<br></br>");
+
+          document.write("Agregamos un articulo al inicio del array con unshift y prompt</br>");
+          articulos.unshift(prompt("Digite un articulo a agregar"));
+          document.write(articulos[0]+"<br></br>");
+          document.write("Sin eliminar ese articulo quedaria: </br>");
+          document.write(articulos[0]+"</br>");
+          document.write(articulos[1]+"</br>");
+          document.write(articulos[2]+"</br>");
+          document.write(articulos[3]+"</br>");
+          document.write(articulos[4]+"<br></br>");
+
+          document.write("Agregamos otro articulo temporal al final del array con el metodo push y prompt</br>");
+          articulos.push(prompt("Digite un articulo para el final del array"));
+          document.write("Ahora el ultimo articulo es "+articulos[articulos.length-1]+"<br></br>");
+          document.write("Sin eliminar ese articulo quedaria: </br>");
+          document.write(articulos[0]+"</br>");
+          document.write(articulos[1]+"</br>");
+          document.write(articulos[2]+"</br>");
+          document.write(articulos[3]+"</br>");
+          document.write(articulos[4]+"</br>");
+          document.write(articulos[5]+"<br></br>");
+
+
+
+
+       
+
+
+
+
+          
+
+	  </script>
+     </div>
+  </div>
+  
+</div>
+</body>
+</html>
